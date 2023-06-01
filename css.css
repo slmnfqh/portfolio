@@ -1,0 +1,804 @@
+/** @format */
+
+:root {
+  --yellow: #f7ce3a;
+  --bg: #010101;
+}
+
+*,
+html {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background: var(--yellow);
+  color: #333;
+}
+
+/* untuk hilangkan scroll dikanan  */
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* untuk beri warna dasar scroll dikanan  */
+html::-webkit-scrollbar-track {
+  background: #28443b;
+}
+
+/* untuk beri warna kuning scroll dikanan  */
+html::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+}
+
+html {
+  background-color: #1b2022;
+  overflow-x: hidden;
+  padding-left: 35rem;
+  min-height: 10000px;
+}
+
+/* start navbar 1 */
+.navbar-1 {
+  display: none;
+}
+/* end navbar 1 */
+
+/* navbar 2*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100%;
+  width: 25rem;
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  border-right: 3px solid var(--yellow);
+}
+
+header .close {
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  display: none;
+  font-weight: bold;
+  background-color: var(--yellow);
+  color: #010101;
+}
+header .close a {
+  color: #000000;
+}
+
+header .user .foto {
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.1rem solid var(--yellow);
+}
+
+header .user .name {
+  font-size: 2rem;
+  color: white;
+  font-family: "Josefin Sans";
+}
+
+header .user .post {
+  font-size: 1rem;
+  color: var(--yellow);
+  font-style: italic;
+}
+
+header .navbar-2 {
+  width: 80%;
+}
+
+header .navbar-2 ul {
+  list-style: none;
+  font-size: 1.1rem;
+  padding: 1rem 3rem;
+}
+
+header .navbar-2 ul li a {
+  text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  border: 0.1px solid var black;
+}
+
+header .navbar-2 ul li a:hover {
+  background-color: var(--yellow);
+  color: black;
+}
+
+/* hamburber */
+#hamburger-menu {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+/* start home */
+.home {
+  position: absolute;
+  top: 10rem;
+  left: 42rem;
+
+  color: white;
+}
+
+.home .row .col h4 {
+  font-size: 2rem;
+}
+
+.home .row .col h2 {
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+.home .row .col h2 span {
+  color: var(--yellow);
+}
+
+.home .row .col p {
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  font-family: "Josefin Sans";
+  max-width: 45rem;
+  line-height: 2;
+}
+
+.home .row .col p span {
+  font-size: 1rem;
+  background-color: var(--yellow);
+  color: var(--bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+#box {
+  background-color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#box:hover {
+  background-color: #fbff00;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fbff00);
+  animation: garisatas 1s linear infinite;
+}
+
+@keyframes garisatas {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fbff00);
+  animation: gariskanan 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes gariskanan {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fbff00);
+  animation: garisbawah 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes garisbawah {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fbff00);
+  animation: gariskiri 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes gariskiri {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+/* end home */
+
+/* start tentang */
+.tentang {
+  position: absolute;
+  top: 48rem;
+  left: 40.4rem;
+}
+.tentang .container .row .col h2 span,
+.keahlian .container .row .col h2 span,
+.riwayat .container .row .col h2 span,
+.sertifikasi .container .row .col h2 span,
+.portfolio .container .row .col h2 span,
+.kontak .container .row .col h2 span {
+  font-size: 3.3rem;
+  color: var(--yellow);
+  font-style: italic;
+}
+.tentang .container .row .col h2,
+.keahlian .container .row .col h2,
+.riwayat .container .row .col h2,
+.sertifikasi .container .row .col h2,
+.portfolio .container .row .col h2,
+.kontak .container .row .col h2 {
+  color: #ffffff;
+  font-size: 3.3rem;
+  font-style: italic;
+}
+.tentang .container .row .col h2::after,
+.keahlian .container .row .col h2::after,
+.riwayat .container .row .col h2::after,
+.sertifikasi .container .row .col h2::after,
+.portfolio .container .row .col h2::after,
+.kontak .container .row .col h2::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.4rem;
+  background: linear-gradient(270deg, transparent, #f7ce3a);
+  transform: scaleX(0.5);
+}
+
+.tentang .container .row .col table tbody tr td {
+  border-bottom: none;
+  color: rgb(255, 255, 255);
+  font-family: "Josefin Sans";
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-left: 0%;
+}
+
+.tentang .container .row .col table tbody tr th {
+  border-bottom: none;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  padding-right: 12rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding-left: 0%;
+}
+/* end tentang */
+
+/* star keahlian */
+.keahlian {
+  position: absolute;
+  top: 86.5rem;
+  left: 47rem;
+}
+
+.skils {
+  position: absolute;
+  top: 95.5rem;
+  left: 21.5rem;
+}
+
+.skils .row .col-lg-2 p {
+  font-family: "Josefin Sans";
+  font-size: 1rem;
+  background: linear-gradient(270deg, transparent, #010101);
+  color: rgb(71, 255, 252);
+  width: 8.5rem;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0.3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+/* end keahlian */
+
+/* start pendidikan */
+
+.riwayat {
+  position: absolute;
+  top: 120rem;
+  left: 47.5rem;
+}
+
+.riwayat-pendidikan {
+  position: absolute;
+  top: 128rem;
+  left: 13rem;
+}
+
+.riwayat-pendidikan .row .col-lg-5 h5 {
+  color: white;
+  font-family: "Josefin Sans";
+}
+
+.riwayat-pendidikan .row .col-lg-5 p {
+  color: white;
+  font-family: "Josefin Sans";
+}
+.riwayat-pendidikan .row .col-lg-5 p span {
+  opacity: 0.5;
+}
+
+.riwayat-pengalaman {
+  position: absolute;
+  top: 128rem;
+  left: 40rem;
+}
+
+.riwayat-pengalaman .row .col-lg-5 h5 {
+  color: white;
+  font-family: "Josefin Sans";
+}
+
+.riwayat-pengalaman .row .col-lg-5 p {
+  color: white;
+  font-family: "Josefin Sans";
+}
+.riwayat-pengalaman .row .col-lg-5 p span {
+  opacity: 0.5;
+}
+/* end Riwayat */
+
+/* Start Sertifikasi */
+.sertifikasi {
+  position: absolute;
+  top: 165rem;
+  left: 47rem;
+}
+
+.sertifikasi-img .row {
+  position: absolute;
+  top: 174rem;
+  left: 29rem;
+}
+
+.sertifikasi-img .row .col-lg-3 .card .card-body {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.sertifikasi-img .row .col-lg-3 .card .card-body i {
+  font-size: 10px;
+}
+
+.sertifikasi-img .row .col-lg-3 .card .card-body p {
+  font-size: 9px;
+  opacity: 0.8;
+  text-transform: lowercase;
+}
+/* End Sertifikasi */
+
+/* Start Portfolio */
+.portfolio {
+  position: absolute;
+  top: 221rem;
+  left: 47rem;
+}
+
+.portfolio-main {
+  position: absolute;
+  top: 230rem;
+  left: 19.5rem;
+}
+
+.portfolio-main .row .col-lg-3 .card .card-body p {
+  font-size: 9px;
+  opacity: 0.8;
+  text-transform: lowercase;
+}
+/* End Portfolio */
+
+/* Start Kontak */
+.kontak {
+  position: absolute;
+  top: 279rem;
+  left: 47rem;
+}
+
+.kontak-main {
+  position: absolute;
+  top: 280rem;
+  left: 20%;
+}
+.kontak-main .row .col-lg-7 .my-alert {
+  position: absolute;
+  top: 14%;
+  left: 30.4%;
+}
+
+.kontak-main .row form {
+  flex: 1 1 8rem;
+  padding: 5rem 2rem;
+  text-align: center;
+  width: 100%;
+}
+.kontak-main .row form .input-grup {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding-left: 3rem;
+  color: #fff;
+  border: none;
+}
+.kontak-main .row form .input-grup input {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: none;
+  color: #fff;
+  border-bottom: 1px solid rgb(108, 103, 103);
+  transition: 0.5s;
+}
+.kontak-main .row form .input-grup input:focus {
+  border-bottom: 1px solid var(--yellow);
+  padding: 1rem 0.7rem;
+}
+.kontak-main .row form .btn {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 6%;
+  margin-left: -6%;
+  padding: 0.8rem 2.9rem;
+  border-radius: 50px;
+  border: 1px solid var(--yellow);
+  background: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.kontak-main .row form .btn:hover {
+  background-color: #cbb241;
+  color: black;
+}
+/* End Kontak */
+
+/* Media Queries */
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* tablet */
+@media (max-width: 885px) {
+  html {
+    font-size: 90%;
+  }
+
+  .navbar-1 {
+    display: flex;
+    align-items: center;
+    padding: 1.4rem 7%; /* 1.4rem kali 16px */
+    background-color: rgba(0, 0, 0, 0.794);
+    border-bottom: 1px solid #f7ce3a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 2rem 0;
+  }
+  .navbar-1 .navbarlogo {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+    padding-left: 1rem;
+  }
+  .navbar-1 .navbarlogo span {
+    color: var(--yellow);
+  }
+
+  .navbar-1 #hamburger-menu {
+    color: var(--yellow);
+    padding-right: 1rem;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .header {
+    position: fixed;
+    left: -100%;
+    transition: 0.5s;
+    width: 100%;
+  }
+
+  .header .close {
+    display: inline-block;
+  }
+
+  .header.active {
+    left: 0;
+    position: fixed;
+  }
+
+  .home {
+    padding: 0rem 4%;
+    top: 15rem;
+    left: 4rem;
+    max-width: 50rem;
+  }
+  .tentang {
+    left: 0;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+  .navbar-1 .navbarlogo {
+    font-size: 1.2rem;
+  }
+  .home {
+    top: 10rem;
+    left: 0rem;
+    padding: 0 5%;
+    max-width: 50rem;
+    line-height: 1.9;
+  }
+  .home .row .col h2 {
+    font-size: 2.3rem;
+  }
+  .home .row .col p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .home .row .col p span {
+    font-size: 0.9rem;
+  }
+
+  #box {
+    background-color: rgb(0, 0, 0);
+    padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* tentang */
+  .tentang {
+    top: 46rem;
+    margin-left: 10%;
+  }
+  .tentang .container .row .col h2 span,
+  .keahlian .container .row .col h2 span,
+  .riwayat .container .row .col h2 span,
+  .sertifikasi .container .row .col h2 span,
+  .portfolio .container .row .col h2 span,
+  .kontak .container .row .col h2 span {
+    font-size: 2.4rem;
+  }
+  .tentang .container .row .col h2,
+  .keahlian .container .row .col h2,
+  .riwayat .container .row .col h2,
+  .sertifikasi .container .row .col h2,
+  .portfolio .container .row .col h2,
+  .kontak .container .row .col h2 {
+    font-size: 2.4rem;
+  }
+
+  .tentang .container .row .col table tbody tr td {
+    font-size: 1.3rem;
+    padding: 0 4% 0 30%;
+    line-height: 3rem;
+  }
+
+  .tentang .container .row .col table tbody tr th {
+    font-size: 1rem;
+    line-height: 3rem;
+    padding: 0 4%;
+    padding-left: 4%;
+    padding-right: 0rem;
+  }
+
+  /* Keahlian */
+  .keahlian {
+    top: 80rem;
+    left: 14%;
+  }
+
+  .skils {
+    display: flex;
+    position: absolute;
+    top: 87rem;
+    left: 0rem;
+  }
+  .skils .row .col-lg-2 p {
+    margin-left: 15.4%;
+    font-size: 1rem;
+    width: 6rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    font-weight: normal;
+  }
+
+  /* Riwayat */
+  .riwayat {
+    top: 112rem;
+    left: 15%;
+  }
+
+  .riwayat-pendidikan {
+    position: absolute;
+    top: 119rem;
+    left: 7.3%;
+    font-size: 94%;
+  }
+  .riwayat-pengalaman {
+    position: absolute;
+    top: 145rem;
+    left: 7.3%;
+    font-size: 94%;
+  }
+
+  /* Sertifikasi */
+  .sertifikasi {
+    top: 179rem;
+    left: 12%;
+  }
+
+  .sertifikasi-img .row {
+    display: flex;
+    position: absolute;
+    top: 185rem;
+    left: 0rem;
+  }
+  .sertifikasi-img .row .col-lg-3 {
+    padding: 0 13% 0 13%;
+  }
+  .sertifikasi-img .row .col-lg-3 .card .card-body i {
+    font-size: 1rem;
+  }
+
+  .sertifikasi-img .row .col-lg-3 .card .card-body p {
+    font-size: 0.8rem;
+  }
+
+  /* portfolio */
+  .portfolio {
+    top: 265rem;
+    left: 16%;
+  }
+
+  .portfolio-main {
+    display: flex;
+    position: absolute;
+    top: 272rem;
+    left: 0rem;
+    gap: 1rem;
+  }
+
+  .portfolio-main .row .col-lg-3 {
+    padding: 0 8% 0 8%;
+  }
+  .portfolio-main .row .col-lg-3 .card .card-body i {
+    font-size: 1rem;
+  }
+
+  .portfolio-main .row .col-lg-3 .card .card-body p {
+    font-size: 0.7rem;
+  }
+
+  /* kontak */
+  .kontak {
+    position: absolute;
+    top: 326rem;
+    left: 16%;
+  }
+
+  .kontak-main {
+    position: absolute;
+    top: 325rem;
+    left: 0%;
+    right: 0%;
+  }
+  .kontak-main .row .col-lg-7 .my-alert {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .kontak-main .row form .input-grup {
+    padding-left: 0;
+  }
+  .kontak-main .row form .input-grup input {
+    font-size: 1rem;
+  }
+
+  .kontak-main .row form .btn {
+    margin-top: 13%;
+    margin-left: 0%;
+  }
+}
+
+/* mobile phone 360 */
+@media (max-width: 375px) {
+  .home .row .col p {
+    font-size: 0.8rem;
+  }
+  .home .row .col p span {
+    font-size: 0.7rem;
+  }
+}

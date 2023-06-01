@@ -1,0 +1,621 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:wght@200;300;400;600&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link my css -->
+    <link rel="stylesheet" href="css.css" />
+
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- link fether icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- navbar 1 -->
+    <nav class="navbar-1">
+      <a href="#" class="navbarlogo"> <span>slmn</span>fqh</a>
+      <a href="#close" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </nav>
+    <!-- navbar 2-->
+    <header class="header">
+      <!-- logo -->
+      <div class="close">
+        <a href="#" id="close"><i data-feather="x"></i></a>
+      </div>
+      <div class="user">
+        <img class="foto" src="foto/101.jpg" alt="" />
+        <h3 class="name mt-2">Sulaiman Faqih</h3>
+        <p class="post">Web Developer</p>
+      </div>
+
+      <!-- navbar nav -->
+      <nav class="navbar-2">
+        <ul>
+          <li class="">
+            <a href="#home">Home</a>
+          </li>
+          <li class="mt-2">
+            <a href="#tentang">Tentang </a>
+          </li>
+          <li class="mt-2">
+            <a href="#keahlian">Keahlian</a>
+          </li>
+          <li class="mt-2">
+            <a href="#riwayat">Riwayat</a>
+          </li>
+          <li class="mt-2">
+            <a href="#riwayat">Portfolio</a>
+          </li>
+          <li class="mt-2">
+            <a href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- start home -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4>Hi !</h4>
+            <h2>I'M <span>Sulaiman Faqih</span></h2>
+            <p class="pt-4">
+              Saya Seorang
+              <span id="specialist">Web Developer</span>
+            </p>
+            <p class="pt-3">
+              saya adalah orang yang Ambisius khususnya seputar programming,<br />
+              Saya selalu berusaha untuk tumbuh dan mempelajari sesuatu yang
+              baru dan Saya bersemangat membantu startup tumbuh.
+            </p>
+
+            <div class="login-box mt-4">
+              <form>
+                <a href="#" id="box">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <i>Hire Me!</i>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end home -->
+
+    <!-- start tentang -->
+
+    <section class="tentang" id="tentang">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center"><span>Tentang</span> Saya</h2>
+
+            <table class="table mt-5">
+              <tbody>
+                <tr>
+                  <th>Nama</th>
+                  <td>: Sulaiman Faqih</td>
+                </tr>
+                <tr>
+                  <th>Usia</th>
+                  <td>: 23</td>
+                </tr>
+                <tr>
+                  <th>Alamat</th>
+                  <td>: Jatisari Jatiasih Kota Bekasi</td>
+                </tr>
+                <tr>
+                  <th>Status</th>
+                  <td>: Lajang</td>
+                </tr>
+                <tr>
+                  <th>Negara</th>
+                  <td>: Indonesia</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end tentang -->
+
+    <!-- start Keahlian -->
+    <section class="keahlian" id="keahlian">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center"><span>keahlian</span> Saya</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container skils">
+      <div class="row justify-content-center">
+        <div class="col-lg-2 mb-3"><p>Html</p></div>
+        <div class="col-lg-2 mb-3"><p>Php</p></div>
+        <div class="col-lg-2 mb-3"><p>Json</p></div>
+        <div class="col-lg-2 mb-3"><p>Figma</p></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-2 mb-3"><p>Css</p></div>
+        <div class="col-lg-2 mb-3"><p>Laravel</p></div>
+        <div class="col-lg-2 mb-3"><p>Mysql</p></div>
+        <div class="col-lg-2 mb-3"><p>--</p></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-2 mb-3"><p>Javascript</p></div>
+        <div class="col-lg-2 mb-3"><p>Bootstrap</p></div>
+        <div class="col-lg-2 mb-3"><p>Github</p></div>
+        <div class="col-lg-2 mb-3"><p>--</p></div>
+      </div>
+    </div>
+    <!-- end Keahlian -->
+
+    <!-- start pendidikan & pengalaman -->
+    <section class="riwayat" id="riwayat">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center"><span>Riwayat</span> Saya</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container riwayat-pendidikan">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 mb-3">
+          <h5 class="mb-4">Pendidikan</h5>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> Smk Yadika 11 Kota Bekasi</i> <br />
+            <span>2015 - 2018</span> (Teknik Komputer Jaringan)
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 mb-3">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> PonPes Minhajusshobirin Jakarta Timur </i><br />
+            <span>2018 - 2019</span> (Tafsir Dasar Al-qur'an)
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 mb-3">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> PonPes Kutubussittah Albarokah Purworejo</i><br />
+            <span> 2020 - 2021</span> (Tafsir Dasar Hadist)
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 mb-3">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> Universitas Bina Sarana Informatika </i> <br />
+            <span> 2021 - sekarang</span> (Teknologi Informasi)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------Batas------------------------ -->
+
+    <div class="container riwayat-pengalaman">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 mb-3">
+          <h5 class="mb-4">Pengalaman</h5>
+          <p class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> PKL Telkom Sto </i> <br />
+            <span>2016 - 2017</span> (Teknisi Jaringan Indihome)
+          </p>
+          <p class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> Programming essentials - Netacad</i><br />
+            <span>Nov 2022 - Des 2022</span> (Dasar Pemrograman python)
+          </p>
+          <p class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> Course - Rakamin Academy </i><br />
+            <span>Jan 2023 - Feb 2023</span> (Ui Ux Design)
+          </p>
+          <p class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> Sertifikasi BNSP - Kominfo</i><br />
+            <span>Feb 2023 - Mar 2023</span> (Junior Web Developer)
+          </p>
+          <p class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+            <i> Course - Dicoding</i><br />
+            <span>Mei 2023 - Jul 2023</span> (Front-End Web Developer)
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end pendidikan & pengalaman -->
+
+    <!-- Start Sertifikasi -->
+    <section class="sertifikasi" id="sertifikasi">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center"><span>Sertifikasi</span> Saya</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container sertifikasi-img">
+      <div class="row justify-content-center">
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <img
+              src="/foto/kominfo.png"
+              class="card-img-top card-img-bottom"
+              alt="..."
+            />
+            <div class="card-body card-img-bottom">
+              <i class="card-text">Workshop Junior Web Developer </i>
+              <p>from digitalent.kominfo.go.id</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <img src="/foto/python.png" class="card-img-top" alt="..." />
+            <div class="card-body card-img-bottom">
+              <i class="card-text">Pelatihan Dasar Pemrograman Python</i>
+              <p>from netacad.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <img src="/foto/ui.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <i class="card-text">Pelatihan Dasar UI UX Design</i>
+              <p>from rakamin.com</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <img src=".." class="card-img-top" alt="menyusul" />
+            <div class="card-body">
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sertifikasi -->
+
+    <!-- Start Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center"><span>Portfolio</span> Saya</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container portfolio-main">
+      <div class="row justify-content-center">
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <img
+              src="/foto/personal web.png"
+              class="card-img-top card-img-bottom"
+              alt="..."
+            />
+            <div class="card-body card-img-bottom">
+              <i class="card-text">Workshop Junior Web Developer </i>
+              <p>from digitalent.kominfo.go.id</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <img
+              src="/foto/personal web.png"
+              class="card-img-top card-img-bottom"
+              alt="..."
+            />
+            <div class="card-body card-img-bottom">
+              <i class="card-text">Workshop Junior Web Developer </i>
+              <p>from digitalent.kominfo.go.id</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <img
+              src="/foto/personal web.png"
+              class="card-img-top card-img-bottom"
+              alt="..."
+            />
+            <div class="card-body card-img-bottom">
+              <i class="card-text">Workshop Junior Web Developer </i>
+              <p>from digitalent.kominfo.go.id</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <img
+              src="/foto/personal web.png"
+              class="card-img-top card-img-bottom"
+              alt="..."
+            />
+            <div class="card-body card-img-bottom">
+              <i class="card-text">Workshop Junior Web Developer </i>
+              <p>from digitalent.kominfo.go.id</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <img
+              src="/foto/personal web.png"
+              class="card-img-top card-img-bottom"
+              alt="..."
+            />
+            <div class="card-body card-img-bottom">
+              <i class="card-text">Workshop Junior Web Developer </i>
+              <p>from digitalent.kominfo.go.id</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-4">
+            <img
+              src="/foto/personal web.png"
+              class="card-img-top card-img-bottom"
+              alt="..."
+            />
+            <div class="card-body card-img-bottom">
+              <i class="card-text">Workshop Junior Web Developer </i>
+              <p>from digitalent.kominfo.go.id</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Portfolio -->
+
+    <!-- Start find me -->
+    <section class="kontak" id="kontak">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center"><span>Kontak</span> Saya</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container kontak-main">
+      <div class="row text-center justify-content-center">
+        <div class="col-lg-7">
+          <div
+            class="alert alert-success alert-dismissible fade show d-none my-alert"
+            role="alert"
+          >
+            <strong>Terimakasih!</strong>
+            <p>Pesan Anda Sudah Kami Terima <i data-feather="smile"></i></p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form action="" name="faqih-contact-form">
+            <div class="input-grup">
+              <i data-feather="user"></i>
+              <input type="text" placeholder="Nama " name="nama" required />
+            </div>
+            <div class="input-grup">
+              <i data-feather="mail"></i>
+              <input type="email" placeholder="Email " name="email" required />
+            </div>
+            <div class="input-grup">
+              <i data-feather="send"></i>
+              <input type="text" placeholder="Pesan " name="pesan" required />
+            </div>
+            <button type="submit" class="btn btn-kirim">KIRIM</button>
+            <button class="btn btn-loading d-none" type="button" disabled>
+              <span
+                class="spinner-border spinner-border-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              Loading...
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End find me -->
+
+    <script src="js.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- google sheet form -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyPoezbdP91ZVwXpuv7hYDh1hJdcw8M6EFFncNmeFqbk3hCNJwxNf9C9MF9wpe_RYSq/exec";
+      const form = document.forms["faqih-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, dan hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => {
+            // tampilkan tombol Kirim, dan hilangkan tombol Loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // dan tampilkan allert
+            myAlert.classList.toggle("d-none");
+            // reset formnya / bersihkan
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
